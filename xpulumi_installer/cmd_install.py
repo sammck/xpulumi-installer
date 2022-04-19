@@ -75,12 +75,16 @@ class CmdInstall(CommandHandler):
         'python3-dev',
         'python3-pip',
         'libsqlcipher0',
-        'libsqlcipher-dev,'
       ])
     pl.add_package_if_cmd_missing('sha256sum', 'coreutils')
     pl.add_package_if_cmd_missing('curl')
     pl.add_package_if_cmd_missing('git')
     pl.add_package_if_cmd_missing('jq')
+    pl.install_all()
+    pl = PackageList()
+    pl.add_packages_if_missing([
+        'libsqlcipher-dev,'   # apt can't find it for some reason until other stuff is installed
+      ])
     pl.install_all()
 
     subprocess.check_call(['python3', '-m', 'venv', './.venv'], cwd=project_root_dir, env=self.get_no_venv_eviron())
