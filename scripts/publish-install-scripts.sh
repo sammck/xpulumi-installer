@@ -7,3 +7,4 @@ cd "$SCRIPT_DIR"
 S3DIR="s3://public.mckelvie.org"
 
 aws s3 cp ./xpulumi-init-env-alpha.sh "$S3DIR/xpulumi-init-env-alpha.sh"
+aws s3 cp ./xpulumi-init-env.sh "$S3DIR/xpulumi-init-env.sh"
