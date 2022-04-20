@@ -92,7 +92,7 @@ class CmdInstall(CommandHandler):
         [
             os.path.join(project_root_dir, '.venv', 'bin', 'xpulumi'),
             'init-env',
-            '--phase-two'
+            '--phase-two',
             '--xpulumi-package', xpulumi_package,
             ],
         cwd=project_root_dir, env=self.get_venv_eviron()
