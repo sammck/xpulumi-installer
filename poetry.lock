@@ -380,7 +380,7 @@ tomlkit = "^0.10.1"
 [package.source]
 type = "git"
 url = "https://github.com/sammck/project-init-tools.git"
-reference = "main"
+reference = "stable"
 resolved_reference = "b6acab80451efaf54bc7763ee2792c895198e7e3"
 
 [[package]]
@@ -766,7 +766,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "fbfef4c1445d6890ecf83416ae3e0cfe5cd416555c8c036a3d47143fce90980d"
+content-hash = "e293dc58c2a20a7381ca1da43ace9afdb9b7f5ac6209b163e706ffb0dfd02e0e"
 
 [metadata.files]
 astroid = [
