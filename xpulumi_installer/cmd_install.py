@@ -56,7 +56,7 @@ class CmdInstall(CommandHandler):
     if self._xpulumi_package is None:
       self._xpulumi_package = cast(Optional[str], self.args.package)
       if self._xpulumi_package is None:
-        self._xpulumi_package = 'https://github.com/sammck/xpulumi.git'
+        self._xpulumi_package = 'https://github.com/sammck/xpulumi.git@stable'
     return self._xpulumi_package
 
   def __call__(self) -> int:
